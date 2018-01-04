@@ -19,7 +19,7 @@ namespace Qlks
             InitializeComponent();
         }
 
-
+        //kết nối database....
         CauLenh cl = new CauLenh();
         DataTable dt = new DataTable();
         private void DangNhap_Load(object sender, EventArgs e)
