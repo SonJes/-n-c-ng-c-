@@ -82,7 +82,27 @@ namespace Qlks
             this.Close();
             
         }
+        private void bt_sua_Click(object sender, EventArgs e)
+        {
 
-     
-    }
+            if (rd_t.Checked)
+            {
+                txt_ten.Clear();
+                txt_namsinh.Clear();
+                txt_socm.Clear();
+                txt_songuoidp.Clear();
+                lb_ngaydp.Text = "";
+                lb_ngaytp.Text = "";
+                dt = cl.xoaphong(maphong);
+                if (dt.Rows[0]["errcode"].ToString() == "1")
+                {
+                    dt = cl.xoacpp(maphong);
+                    dt = cl.xoatongtien(maphong);
+                    MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    load();
+                }
+            }
+
+        }
 }
