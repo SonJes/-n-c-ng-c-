@@ -103,6 +103,31 @@ namespace Qlks
                     load();
                 }
             }
+            else
+            {
+                if (!string.IsNullOrEmpty(txt_ten.Text))
+                {
+                    if (!string.IsNullOrEmpty(txt_namsinh.Text))
+                    {
+                        if (!string.IsNullOrEmpty(txt_socm.Text))
+                        {
+                            if (!string.IsNullOrEmpty(txt_songuoidp.Text))
+                            {
+                                dt = cl.suaphong(maphong, rd_kt.Text, txt_ten.Text, Convert.ToInt32(txt_namsinh.Text), Convert.ToInt32(txt_socm.Text), Convert.ToInt32(txt_songuoidp.Text), dt_ngaydp.Value, dt_ngaytp.Value);
+                                rd_kt.Checked = true;
+                                if (dt.Rows[0]["errcode"].ToString() == "1")
+                                {
+                                    MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-        }
-}
+                                    load();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Lỗi", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                                }
+                            }
+
+
+                        }  
+            }
