@@ -82,10 +82,11 @@ namespace Qlks
             this.Close();
             
         }
+
         private void bt_sua_Click(object sender, EventArgs e)
         {
-
-            if (rd_t.Checked)
+         
+            if(rd_t.Checked)
             {
                 txt_ten.Clear();
                 txt_namsinh.Clear();
@@ -99,13 +100,13 @@ namespace Qlks
                     dt = cl.xoacpp(maphong);
                     dt = cl.xoatongtien(maphong);
                     MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                    load();
+                    
+                    load();   
                 }
             }
             else
             {
-                if (!string.IsNullOrEmpty(txt_ten.Text))
+                if(!string.IsNullOrEmpty(txt_ten.Text))
                 {
                     if (!string.IsNullOrEmpty(txt_namsinh.Text))
                     {
@@ -118,8 +119,8 @@ namespace Qlks
                                 if (dt.Rows[0]["errcode"].ToString() == "1")
                                 {
                                     MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                                    load();
+                                    
+                                    load();   
                                 }
                                 else
                                 {
@@ -127,7 +128,78 @@ namespace Qlks
 
                                 }
                             }
+                            else
+                            {
+                                MessageBox.Show("Nhập Số Người Đặt Phòng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                txt_songuoidp.Focus();
+                            }
+                        }
+                        else
+	                    {
+                            MessageBox.Show("Nhập Số Chứng Minh", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txt_socm.Focus();
+                        }
+                    }
+                    else
+	                {
+                        MessageBox.Show("Nhập Năm Sinh", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txt_namsinh.Focus();
+	                }
+                }
+                else
+                {
+                    MessageBox.Show("Nhập Tên", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txt_ten.Focus();
+                }
 
-
-                        }  
             }
+
+
+        }
+
+        private void bt_tinhtien_Click(object sender, EventArgs e)
+        {
+            tinhtien.maphong = maphong;
+            tinhtien tt = new tinhtien();
+            tt.ShowDialog();
+            
+        }
+
+        private void bt_capnhat_Click(object sender, EventArgs e)
+        {
+            capnhat.maphong = maphong;
+            capnhat cn = new capnhat();
+            cn.ShowDialog();
+        }
+
+        private void txt_socm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_songuoidp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void rd_kt_CheckedChanged(object sender, EventArgs e)
+        {
+            bt_capnhat.Enabled = true;
+            bt_tinhtien.Enabled = true;
+        }
+
+        private void rd_t_CheckedChanged(object sender, EventArgs e)
+        {
+            bt_capnhat.Enabled = false;
+            bt_tinhtien.Enabled = false;
+        }
+
+     
+    }
+}
