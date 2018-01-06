@@ -101,6 +101,18 @@
     <Compile Include="QuanLyPhong.Designer.cs">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinNV.Designer.cs">
+      <DependentUpon>ThongTinNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timkh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timkh.Designer.cs">
+      <DependentUpon>Timkh.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +146,12 @@
     </Compile>
     <EmbeddedResource Include="QuanLyPhong.resx">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinNV.resx">
+      <DependentUpon>ThongTinNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timkh.resx">
+      <DependentUpon>Timkh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Hinh\h.icon" />
     <None Include="Properties\Settings.settings">

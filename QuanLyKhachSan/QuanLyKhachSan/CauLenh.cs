@@ -51,5 +51,20 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public DataTable doimatkhau(string taikhoan, string mkc, string mkm)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+
+            SqlCommand cm = new SqlCommand("doimatkhau", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@taikhoan", taikhoan);
+            cm.Parameters.AddWithValue("@matkhaucu", mkc);
+            cm.Parameters.AddWithValue("@matkhaumoi", mkm);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
     }
 }
