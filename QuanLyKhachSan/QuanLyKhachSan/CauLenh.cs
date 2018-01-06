@@ -66,5 +66,30 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public SqlDataReader loaiphong(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader ketqua = null;
+            SqlCommand cm = new SqlCommand("hienloaiphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            ketqua = cm.ExecuteReader();
+            return ketqua;
+        }
+        public DataTable loaiphong1(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("hienloaiphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
     }
 }
