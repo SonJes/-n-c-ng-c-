@@ -107,6 +107,7 @@
             this.bt_thoat.TabIndex = 10;
             this.bt_thoat.Text = "X";
             this.bt_thoat.UseVisualStyleBackColor = false;
+
             // 
             // label1
             // 
