@@ -70,6 +70,7 @@
     <Compile Include="DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
     </Compile>
+
     <Compile Include="DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +108,7 @@
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </EmbeddedResource>

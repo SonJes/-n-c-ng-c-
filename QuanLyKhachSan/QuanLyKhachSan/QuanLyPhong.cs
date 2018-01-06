@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace QuanLyKhachSan
 {
     public partial class QuanLyPhong : Form
@@ -17,6 +18,7 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+
         public static string nguoi_dn;
         public string hinh1 = @"Hinh\hinh1.png";
         public string hinh2 = @"Hinh\hinh2.png";
@@ -31,5 +33,6 @@ namespace QuanLyKhachSan
         DataTable dt = new DataTable();
         SqlDataReader dr;
         public string tt = null;
+
     }
 }
