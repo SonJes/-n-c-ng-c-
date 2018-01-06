@@ -27,5 +27,29 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public SqlDataReader txphong(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader kq = null;
+            SqlCommand cm = new SqlCommand("txp", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            kq = cm.ExecuteReader();
+            return kq;
+        }
+        public DataTable ttphong(int manv)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("tinhtrangphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", manv);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
     }
 }
