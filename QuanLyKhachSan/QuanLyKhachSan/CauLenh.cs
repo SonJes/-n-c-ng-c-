@@ -91,5 +91,18 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public SqlDataReader timphong(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader ketqua = null;
+            SqlCommand cm = new SqlCommand("phongtrong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            ketqua = cm.ExecuteReader();
+            return ketqua;
+        }
     }
 }
