@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class DangNhap : Form
+    public partial class DoanhThu : Form
     {
-        public DangNhap()
+        public DoanhThu()
         {
             InitializeComponent();
-        }
-        CauLenh cl = new CauLenh();
-        DataTable dt = new DataTable();
-
-        private void bt_thoat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
