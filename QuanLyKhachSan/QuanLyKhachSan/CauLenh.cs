@@ -104,5 +104,20 @@ namespace QuanLyKhachSan
             ketqua = cm.ExecuteReader();
             return ketqua;
         }
+        public DataTable suaphong(int mp, int gp, string lp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+
+            SqlCommand cm = new SqlCommand("[capnhatgiaphong]", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            cm.Parameters.AddWithValue("@giaphong", gp);
+            cm.Parameters.AddWithValue("@loaiphong", lp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
     }
 }
