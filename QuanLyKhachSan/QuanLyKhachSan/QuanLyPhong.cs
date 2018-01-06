@@ -237,5 +237,39 @@ namespace QuanLyKhachSan
             lb_509.Visible = txp(509);
             lb_510.Visible = txp(510);
         }
+        public void frm_load()
+        {
+
+            lbl_ten.Text = "Chào " + nguoi_dn;
+            if (nguoi_dn != "admin")
+            {
+                sửaPhòngToolStripMenuItem.Enabled = false;
+                nhânViênToolStripMenuItem.Enabled = false;
+                thốngKêToolStripMenuItem.Enabled = false;
+            }
+
+            load_tinhtrangphong();
+            load_bt();
+            load_lb();
+
+        }
+        public string layttp(int ma)
+        {
+            string kq = null;
+            dt.Clear();
+            dt = cl.ttphong(ma);
+            string tt = dt.Rows[0]["TinhTrang"].ToString();
+            if (tt == "Đặt Phòng")
+                return kq = "dp";
+            if (tt == "Không")
+                return kq = "kt";
+            else
+                return kq = "kdp";
+        }
+        private void qlks_Load(object sender, EventArgs e)
+        {
+            frm_load();
+
+        }
     }
 }
