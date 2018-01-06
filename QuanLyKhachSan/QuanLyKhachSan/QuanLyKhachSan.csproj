@@ -101,6 +101,12 @@
     <Compile Include="QuanLyPhong.Designer.cs">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuaPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaPhong.Designer.cs">
+      <DependentUpon>SuaPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </Compile>
     <EmbeddedResource Include="QuanLyPhong.resx">
       <DependentUpon>QuanLyPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaPhong.resx">
+      <DependentUpon>SuaPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinNV.resx">
       <DependentUpon>ThongTinNV.cs</DependentUpon>
