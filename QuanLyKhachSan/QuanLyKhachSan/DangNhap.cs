@@ -16,6 +16,7 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+
         CauLenh cl = new CauLenh();
         DataTable dt = new DataTable();
 
@@ -23,5 +24,6 @@ namespace QuanLyKhachSan
         {
             Application.Exit();
         }
+
     }
 }
