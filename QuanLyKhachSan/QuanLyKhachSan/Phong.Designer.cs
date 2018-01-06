@@ -142,6 +142,7 @@
             this.bt_huy.TabIndex = 38;
             this.bt_huy.Text = "Đóng";
             this.bt_huy.UseVisualStyleBackColor = false;
+            this.bt_huy.Click += new System.EventHandler(this.bt_huy_Click);
             // 
             // bt_sua
             // 
@@ -394,7 +395,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Phong";
             this.Text = "Phong";
-            this.Load += new System.EventHandler(this.Phong_Load);
+            this.Load += new System.EventHandler(this.phong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
