@@ -16,5 +16,12 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+        CauLenh cl = new CauLenh();
+        DataTable dt = new DataTable();
+
+        private void bt_thoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
