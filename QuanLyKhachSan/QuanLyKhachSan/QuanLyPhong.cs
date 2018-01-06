@@ -453,17 +453,7 @@ namespace QuanLyKhachSan
 
         private void bt_210_Click(object sender, EventArgs e)
         {
-            tt = layttp(120);
-            if (tt == "dp")
-            {
 
-            }
-            else
-            {
-                Phong.maphong = 210;
-                Phong p = new Phong();
-                p.ShowDialog(); load_tinhtrangphong();
-            }
         }
 
         private void bt_209_Click(object sender, EventArgs e)
@@ -1049,6 +1039,18 @@ namespace QuanLyKhachSan
                 Phong p = new Phong();
                 p.ShowDialog(); load_tinhtrangphong();
             }
+        }
+        private void sửaPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuaPhong sp = new SuaPhong();
+            sp.ShowDialog();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DoiMatKhau.taikhoan = nguoi_dn;
+            doimatkhau dmk = new doimatkhau();
+            dmk.ShowDialog();
         }
     }
 }

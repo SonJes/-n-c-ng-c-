@@ -101,16 +101,6 @@
             this.bt_208 = new System.Windows.Forms.Button();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiNềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nền1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nền2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nền3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nền4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nền5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nền6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.noneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bt_309 = new System.Windows.Forms.Button();
             this.bt_308 = new System.Windows.Forms.Button();
             this.bt_108 = new System.Windows.Forms.Button();
@@ -149,16 +139,26 @@
             this.lbl_ten = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhSáchPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sửaPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tìmKiếmKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmXóaPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sửaDịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chiếtXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiNềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nền1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nền2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nền3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nền4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nền5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nền6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sửaPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tìmKiếmKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pt_hinh = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pt_hinh)).BeginInit();
@@ -646,6 +646,7 @@
             this.bt_507.Size = new System.Drawing.Size(80, 80);
             this.bt_507.TabIndex = 60;
             this.bt_507.UseVisualStyleBackColor = true;
+            this.bt_507.Click += new System.EventHandler(this.bt_507_Click);
             // 
             // bt_407
             // 
@@ -654,6 +655,7 @@
             this.bt_407.Size = new System.Drawing.Size(80, 80);
             this.bt_407.TabIndex = 61;
             this.bt_407.UseVisualStyleBackColor = true;
+            this.bt_407.Click += new System.EventHandler(this.bt_407_Click);
             // 
             // bt_307
             // 
@@ -662,6 +664,7 @@
             this.bt_307.Size = new System.Drawing.Size(80, 80);
             this.bt_307.TabIndex = 32;
             this.bt_307.UseVisualStyleBackColor = true;
+            this.bt_307.Click += new System.EventHandler(this.bt_307_Click);
             // 
             // bt_207
             // 
@@ -670,6 +673,7 @@
             this.bt_207.Size = new System.Drawing.Size(80, 80);
             this.bt_207.TabIndex = 31;
             this.bt_207.UseVisualStyleBackColor = true;
+            this.bt_207.Click += new System.EventHandler(this.bt_207_Click);
             // 
             // bt_107
             // 
@@ -678,6 +682,7 @@
             this.bt_107.Size = new System.Drawing.Size(80, 80);
             this.bt_107.TabIndex = 30;
             this.bt_107.UseVisualStyleBackColor = true;
+            this.bt_107.Click += new System.EventHandler(this.bt_107_Click);
             // 
             // bt_510
             // 
@@ -686,6 +691,7 @@
             this.bt_510.Size = new System.Drawing.Size(80, 80);
             this.bt_510.TabIndex = 29;
             this.bt_510.UseVisualStyleBackColor = true;
+            this.bt_510.Click += new System.EventHandler(this.bt_510_Click);
             // 
             // bt_410
             // 
@@ -694,6 +700,7 @@
             this.bt_410.Size = new System.Drawing.Size(80, 80);
             this.bt_410.TabIndex = 28;
             this.bt_410.UseVisualStyleBackColor = true;
+            this.bt_410.Click += new System.EventHandler(this.bt_410_Click);
             // 
             // bt_310
             // 
@@ -702,6 +709,7 @@
             this.bt_310.Size = new System.Drawing.Size(80, 80);
             this.bt_310.TabIndex = 27;
             this.bt_310.UseVisualStyleBackColor = true;
+            this.bt_310.Click += new System.EventHandler(this.bt_310_Click);
             // 
             // bt_210
             // 
@@ -710,6 +718,7 @@
             this.bt_210.Size = new System.Drawing.Size(80, 80);
             this.bt_210.TabIndex = 26;
             this.bt_210.UseVisualStyleBackColor = true;
+            this.bt_210.Click += new System.EventHandler(this.bt_210_Click);
             // 
             // bt_110
             // 
@@ -718,6 +727,7 @@
             this.bt_110.Size = new System.Drawing.Size(80, 80);
             this.bt_110.TabIndex = 25;
             this.bt_110.UseVisualStyleBackColor = true;
+            this.bt_110.Click += new System.EventHandler(this.bt_110_Click);
             // 
             // bt_509
             // 
@@ -726,6 +736,7 @@
             this.bt_509.Size = new System.Drawing.Size(80, 80);
             this.bt_509.TabIndex = 24;
             this.bt_509.UseVisualStyleBackColor = true;
+            this.bt_509.Click += new System.EventHandler(this.bt_509_Click);
             // 
             // bt_409
             // 
@@ -734,6 +745,7 @@
             this.bt_409.Size = new System.Drawing.Size(80, 80);
             this.bt_409.TabIndex = 33;
             this.bt_409.UseVisualStyleBackColor = true;
+            this.bt_409.Click += new System.EventHandler(this.bt_409_Click);
             // 
             // bt_209
             // 
@@ -742,6 +754,7 @@
             this.bt_209.Size = new System.Drawing.Size(80, 80);
             this.bt_209.TabIndex = 23;
             this.bt_209.UseVisualStyleBackColor = true;
+            this.bt_209.Click += new System.EventHandler(this.bt_209_Click);
             // 
             // bt_109
             // 
@@ -750,6 +763,7 @@
             this.bt_109.Size = new System.Drawing.Size(80, 80);
             this.bt_109.TabIndex = 22;
             this.bt_109.UseVisualStyleBackColor = true;
+            this.bt_109.Click += new System.EventHandler(this.bt_109_Click);
             // 
             // bt_508
             // 
@@ -758,6 +772,7 @@
             this.bt_508.Size = new System.Drawing.Size(80, 80);
             this.bt_508.TabIndex = 21;
             this.bt_508.UseVisualStyleBackColor = true;
+            this.bt_508.Click += new System.EventHandler(this.bt_508_Click);
             // 
             // bt_408
             // 
@@ -766,6 +781,7 @@
             this.bt_408.Size = new System.Drawing.Size(80, 80);
             this.bt_408.TabIndex = 20;
             this.bt_408.UseVisualStyleBackColor = true;
+            this.bt_408.Click += new System.EventHandler(this.bt_408_Click);
             // 
             // bt_208
             // 
@@ -774,6 +790,7 @@
             this.bt_208.Size = new System.Drawing.Size(80, 80);
             this.bt_208.TabIndex = 19;
             this.bt_208.UseVisualStyleBackColor = true;
+            this.bt_208.Click += new System.EventHandler(this.bt_208_Click);
             // 
             // hệThốngToolStripMenuItem
             // 
@@ -791,6 +808,401 @@
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
             this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.đăngNhậpToolStripMenuItem.Text = "Đăng Nhập";
+            this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
+            // 
+            // bt_309
+            // 
+            this.bt_309.Location = new System.Drawing.Point(721, 297);
+            this.bt_309.Name = "bt_309";
+            this.bt_309.Size = new System.Drawing.Size(80, 80);
+            this.bt_309.TabIndex = 18;
+            this.bt_309.UseVisualStyleBackColor = true;
+            this.bt_309.Click += new System.EventHandler(this.bt_309_Click);
+            // 
+            // bt_308
+            // 
+            this.bt_308.Location = new System.Drawing.Point(635, 297);
+            this.bt_308.Name = "bt_308";
+            this.bt_308.Size = new System.Drawing.Size(80, 80);
+            this.bt_308.TabIndex = 17;
+            this.bt_308.UseVisualStyleBackColor = true;
+            this.bt_308.Click += new System.EventHandler(this.bt_308_Click);
+            // 
+            // bt_108
+            // 
+            this.bt_108.Location = new System.Drawing.Point(635, 99);
+            this.bt_108.Name = "bt_108";
+            this.bt_108.Size = new System.Drawing.Size(80, 80);
+            this.bt_108.TabIndex = 16;
+            this.bt_108.UseVisualStyleBackColor = true;
+            this.bt_108.Click += new System.EventHandler(this.bt_108_Click);
+            // 
+            // bt_506
+            // 
+            this.bt_506.Location = new System.Drawing.Point(463, 495);
+            this.bt_506.Name = "bt_506";
+            this.bt_506.Size = new System.Drawing.Size(80, 80);
+            this.bt_506.TabIndex = 15;
+            this.bt_506.UseVisualStyleBackColor = true;
+            this.bt_506.Click += new System.EventHandler(this.bt_506_Click);
+            // 
+            // bt_406
+            // 
+            this.bt_406.Location = new System.Drawing.Point(463, 396);
+            this.bt_406.Name = "bt_406";
+            this.bt_406.Size = new System.Drawing.Size(80, 80);
+            this.bt_406.TabIndex = 14;
+            this.bt_406.UseVisualStyleBackColor = true;
+            this.bt_406.Click += new System.EventHandler(this.bt_406_Click);
+            // 
+            // bt_306
+            // 
+            this.bt_306.Location = new System.Drawing.Point(463, 297);
+            this.bt_306.Name = "bt_306";
+            this.bt_306.Size = new System.Drawing.Size(80, 80);
+            this.bt_306.TabIndex = 13;
+            this.bt_306.UseVisualStyleBackColor = true;
+            this.bt_306.Click += new System.EventHandler(this.bt_306_Click);
+            // 
+            // bt_206
+            // 
+            this.bt_206.Location = new System.Drawing.Point(463, 198);
+            this.bt_206.Name = "bt_206";
+            this.bt_206.Size = new System.Drawing.Size(80, 80);
+            this.bt_206.TabIndex = 34;
+            this.bt_206.UseVisualStyleBackColor = true;
+            this.bt_206.Click += new System.EventHandler(this.bt_206_Click);
+            // 
+            // bt_106
+            // 
+            this.bt_106.Location = new System.Drawing.Point(463, 99);
+            this.bt_106.Name = "bt_106";
+            this.bt_106.Size = new System.Drawing.Size(80, 80);
+            this.bt_106.TabIndex = 35;
+            this.bt_106.UseVisualStyleBackColor = true;
+            this.bt_106.Click += new System.EventHandler(this.bt_106_Click);
+            // 
+            // bt_505
+            // 
+            this.bt_505.Location = new System.Drawing.Point(377, 495);
+            this.bt_505.Name = "bt_505";
+            this.bt_505.Size = new System.Drawing.Size(80, 80);
+            this.bt_505.TabIndex = 36;
+            this.bt_505.UseVisualStyleBackColor = true;
+            this.bt_505.Click += new System.EventHandler(this.bt_505_Click);
+            // 
+            // bt_405
+            // 
+            this.bt_405.Location = new System.Drawing.Point(377, 396);
+            this.bt_405.Name = "bt_405";
+            this.bt_405.Size = new System.Drawing.Size(80, 80);
+            this.bt_405.TabIndex = 59;
+            this.bt_405.UseVisualStyleBackColor = true;
+            this.bt_405.Click += new System.EventHandler(this.bt_405_Click);
+            // 
+            // bt_305
+            // 
+            this.bt_305.Location = new System.Drawing.Point(377, 297);
+            this.bt_305.Name = "bt_305";
+            this.bt_305.Size = new System.Drawing.Size(80, 80);
+            this.bt_305.TabIndex = 57;
+            this.bt_305.UseVisualStyleBackColor = true;
+            this.bt_305.Click += new System.EventHandler(this.bt_305_Click);
+            // 
+            // bt_205
+            // 
+            this.bt_205.Location = new System.Drawing.Point(377, 198);
+            this.bt_205.Name = "bt_205";
+            this.bt_205.Size = new System.Drawing.Size(80, 80);
+            this.bt_205.TabIndex = 56;
+            this.bt_205.UseVisualStyleBackColor = true;
+            this.bt_205.Click += new System.EventHandler(this.bt_205_Click);
+            // 
+            // bt_105
+            // 
+            this.bt_105.Location = new System.Drawing.Point(377, 99);
+            this.bt_105.Name = "bt_105";
+            this.bt_105.Size = new System.Drawing.Size(80, 80);
+            this.bt_105.TabIndex = 55;
+            this.bt_105.UseVisualStyleBackColor = true;
+            this.bt_105.Click += new System.EventHandler(this.bt_105_Click);
+            // 
+            // bt_504
+            // 
+            this.bt_504.Location = new System.Drawing.Point(291, 495);
+            this.bt_504.Name = "bt_504";
+            this.bt_504.Size = new System.Drawing.Size(80, 80);
+            this.bt_504.TabIndex = 54;
+            this.bt_504.UseVisualStyleBackColor = true;
+            this.bt_504.Click += new System.EventHandler(this.bt_504_Click);
+            // 
+            // bt_404
+            // 
+            this.bt_404.Location = new System.Drawing.Point(291, 396);
+            this.bt_404.Name = "bt_404";
+            this.bt_404.Size = new System.Drawing.Size(80, 80);
+            this.bt_404.TabIndex = 53;
+            this.bt_404.UseVisualStyleBackColor = true;
+            this.bt_404.Click += new System.EventHandler(this.bt_404_Click);
+            // 
+            // bt_304
+            // 
+            this.bt_304.Location = new System.Drawing.Point(291, 297);
+            this.bt_304.Name = "bt_304";
+            this.bt_304.Size = new System.Drawing.Size(80, 80);
+            this.bt_304.TabIndex = 52;
+            this.bt_304.UseVisualStyleBackColor = true;
+            this.bt_304.Click += new System.EventHandler(this.bt_304_Click);
+            // 
+            // bt_204
+            // 
+            this.bt_204.Location = new System.Drawing.Point(291, 198);
+            this.bt_204.Name = "bt_204";
+            this.bt_204.Size = new System.Drawing.Size(80, 80);
+            this.bt_204.TabIndex = 51;
+            this.bt_204.UseVisualStyleBackColor = true;
+            this.bt_204.Click += new System.EventHandler(this.bt_204_Click);
+            // 
+            // bt_503
+            // 
+            this.bt_503.Location = new System.Drawing.Point(205, 495);
+            this.bt_503.Name = "bt_503";
+            this.bt_503.Size = new System.Drawing.Size(80, 80);
+            this.bt_503.TabIndex = 50;
+            this.bt_503.UseVisualStyleBackColor = true;
+            this.bt_503.Click += new System.EventHandler(this.bt_503_Click);
+            // 
+            // bt_104
+            // 
+            this.bt_104.Location = new System.Drawing.Point(291, 99);
+            this.bt_104.Name = "bt_104";
+            this.bt_104.Size = new System.Drawing.Size(80, 80);
+            this.bt_104.TabIndex = 49;
+            this.bt_104.UseVisualStyleBackColor = true;
+            this.bt_104.Click += new System.EventHandler(this.bt_104_Click);
+            // 
+            // bt_403
+            // 
+            this.bt_403.Location = new System.Drawing.Point(205, 396);
+            this.bt_403.Name = "bt_403";
+            this.bt_403.Size = new System.Drawing.Size(80, 80);
+            this.bt_403.TabIndex = 48;
+            this.bt_403.UseVisualStyleBackColor = true;
+            this.bt_403.Click += new System.EventHandler(this.bt_403_Click);
+            // 
+            // bt_303
+            // 
+            this.bt_303.Location = new System.Drawing.Point(205, 297);
+            this.bt_303.Name = "bt_303";
+            this.bt_303.Size = new System.Drawing.Size(80, 80);
+            this.bt_303.TabIndex = 47;
+            this.bt_303.UseVisualStyleBackColor = true;
+            this.bt_303.Click += new System.EventHandler(this.bt_303_Click);
+            // 
+            // bt_502
+            // 
+            this.bt_502.Location = new System.Drawing.Point(119, 495);
+            this.bt_502.Name = "bt_502";
+            this.bt_502.Size = new System.Drawing.Size(80, 80);
+            this.bt_502.TabIndex = 46;
+            this.bt_502.UseVisualStyleBackColor = true;
+            this.bt_502.Click += new System.EventHandler(this.bt_502_Click);
+            // 
+            // bt_203
+            // 
+            this.bt_203.Location = new System.Drawing.Point(205, 198);
+            this.bt_203.Name = "bt_203";
+            this.bt_203.Size = new System.Drawing.Size(80, 80);
+            this.bt_203.TabIndex = 45;
+            this.bt_203.UseVisualStyleBackColor = true;
+            this.bt_203.Click += new System.EventHandler(this.bt_203_Click);
+            // 
+            // bt_402
+            // 
+            this.bt_402.Location = new System.Drawing.Point(119, 396);
+            this.bt_402.Name = "bt_402";
+            this.bt_402.Size = new System.Drawing.Size(80, 80);
+            this.bt_402.TabIndex = 44;
+            this.bt_402.UseVisualStyleBackColor = true;
+            this.bt_402.Click += new System.EventHandler(this.bt_402_Click);
+            // 
+            // bt_302
+            // 
+            this.bt_302.Location = new System.Drawing.Point(119, 297);
+            this.bt_302.Name = "bt_302";
+            this.bt_302.Size = new System.Drawing.Size(80, 80);
+            this.bt_302.TabIndex = 43;
+            this.bt_302.UseVisualStyleBackColor = true;
+            this.bt_302.Click += new System.EventHandler(this.bt_302_Click);
+            // 
+            // bt_202
+            // 
+            this.bt_202.Location = new System.Drawing.Point(119, 198);
+            this.bt_202.Name = "bt_202";
+            this.bt_202.Size = new System.Drawing.Size(80, 80);
+            this.bt_202.TabIndex = 42;
+            this.bt_202.UseVisualStyleBackColor = true;
+            this.bt_202.Click += new System.EventHandler(this.bt_202_Click);
+            // 
+            // bt_501
+            // 
+            this.bt_501.Location = new System.Drawing.Point(33, 495);
+            this.bt_501.Name = "bt_501";
+            this.bt_501.Size = new System.Drawing.Size(80, 80);
+            this.bt_501.TabIndex = 41;
+            this.bt_501.UseVisualStyleBackColor = true;
+            this.bt_501.Click += new System.EventHandler(this.bt_501_Click);
+            // 
+            // bt_103
+            // 
+            this.bt_103.Location = new System.Drawing.Point(205, 99);
+            this.bt_103.Name = "bt_103";
+            this.bt_103.Size = new System.Drawing.Size(80, 80);
+            this.bt_103.TabIndex = 40;
+            this.bt_103.UseVisualStyleBackColor = true;
+            this.bt_103.Click += new System.EventHandler(this.bt_103_Click);
+            // 
+            // bt_401
+            // 
+            this.bt_401.Location = new System.Drawing.Point(33, 396);
+            this.bt_401.Name = "bt_401";
+            this.bt_401.Size = new System.Drawing.Size(80, 80);
+            this.bt_401.TabIndex = 39;
+            this.bt_401.UseVisualStyleBackColor = true;
+            this.bt_401.Click += new System.EventHandler(this.bt_401_Click);
+            // 
+            // bt_301
+            // 
+            this.bt_301.Location = new System.Drawing.Point(33, 297);
+            this.bt_301.Name = "bt_301";
+            this.bt_301.Size = new System.Drawing.Size(80, 80);
+            this.bt_301.TabIndex = 38;
+            this.bt_301.UseVisualStyleBackColor = true;
+            this.bt_301.Click += new System.EventHandler(this.bt_301_Click);
+            // 
+            // bt_201
+            // 
+            this.bt_201.Location = new System.Drawing.Point(33, 198);
+            this.bt_201.Name = "bt_201";
+            this.bt_201.Size = new System.Drawing.Size(80, 80);
+            this.bt_201.TabIndex = 37;
+            this.bt_201.UseVisualStyleBackColor = true;
+            this.bt_201.Click += new System.EventHandler(this.bt_201_Click);
+            // 
+            // bt_102
+            // 
+            this.bt_102.Location = new System.Drawing.Point(119, 99);
+            this.bt_102.Name = "bt_102";
+            this.bt_102.Size = new System.Drawing.Size(80, 80);
+            this.bt_102.TabIndex = 12;
+            this.bt_102.UseVisualStyleBackColor = true;
+            this.bt_102.Click += new System.EventHandler(this.bt_102_Click);
+            // 
+            // bt_101
+            // 
+            this.bt_101.Location = new System.Drawing.Point(33, 99);
+            this.bt_101.Name = "bt_101";
+            this.bt_101.Size = new System.Drawing.Size(80, 80);
+            this.bt_101.TabIndex = 58;
+            this.bt_101.UseVisualStyleBackColor = true;
+            this.bt_101.Click += new System.EventHandler(this.bt_101_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Goldenrod;
+            this.button2.Location = new System.Drawing.Point(862, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(56, 29);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.SpringGreen;
+            this.button1.Location = new System.Drawing.Point(862, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 28);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lbl_ten
+            // 
+            this.lbl_ten.AutoSize = true;
+            this.lbl_ten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ten.Location = new System.Drawing.Point(-16, 607);
+            this.lbl_ten.Name = "lbl_ten";
+            this.lbl_ten.Size = new System.Drawing.Size(30, 17);
+            this.lbl_ten.TabIndex = 8;
+            this.lbl_ten.Text = "null";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkCyan;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hệThốngToolStripMenuItem,
+            this.quảnLýToolStripMenuItem,
+            this.danhMụcToolStripMenuItem,
+            this.thốngKêToolStripMenuItem,
+            this.trợGiúpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(918, 55);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // quảnLýToolStripMenuItem
+            // 
+            this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.danhSáchPhòngToolStripMenuItem,
+            this.nhânViênToolStripMenuItem,
+            this.sửaPhòngToolStripMenuItem,
+            this.tìmKiếmKháchHàngToolStripMenuItem,
+            this.thêmXóaPhòngToolStripMenuItem,
+            this.sửaDịchVụToolStripMenuItem});
+            this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
+            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(75, 51);
+            this.quảnLýToolStripMenuItem.Text = "Quản Lý";
+            // 
+            // thêmXóaPhòngToolStripMenuItem
+            // 
+            this.thêmXóaPhòngToolStripMenuItem.Name = "thêmXóaPhòngToolStripMenuItem";
+            this.thêmXóaPhòngToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.thêmXóaPhòngToolStripMenuItem.Text = "Thêm/Xóa Phòng";
+            // 
+            // sửaDịchVụToolStripMenuItem
+            // 
+            this.sửaDịchVụToolStripMenuItem.Name = "sửaDịchVụToolStripMenuItem";
+            this.sửaDịchVụToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.sửaDịchVụToolStripMenuItem.Text = "Sửa Dịch Vụ";
+            // 
+            // danhMụcToolStripMenuItem
+            // 
+            this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
+            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(87, 51);
+            this.danhMụcToolStripMenuItem.Text = "Danh Mục";
+            // 
+            // thốngKêToolStripMenuItem
+            // 
+            this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doanhThuToolStripMenuItem,
+            this.chiếtXuấtToolStripMenuItem});
+            this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(84, 51);
+            this.thốngKêToolStripMenuItem.Text = "Thống Kê";
+            // 
+            // chiếtXuấtToolStripMenuItem
+            // 
+            this.chiếtXuấtToolStripMenuItem.Name = "chiếtXuấtToolStripMenuItem";
+            this.chiếtXuấtToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
+            this.chiếtXuấtToolStripMenuItem.Text = "Chiết Xuất";
             // 
             // đăngXuấtToolStripMenuItem
             // 
@@ -798,6 +1210,7 @@
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.đăngXuấtToolStripMenuItem.Text = "Thoát";
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
@@ -805,6 +1218,7 @@
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
             this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
+            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // đổiNềnToolStripMenuItem
             // 
@@ -863,338 +1277,13 @@
             this.noneToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.noneToolStripMenuItem.Text = "None";
             // 
-            // bt_309
-            // 
-            this.bt_309.Location = new System.Drawing.Point(721, 297);
-            this.bt_309.Name = "bt_309";
-            this.bt_309.Size = new System.Drawing.Size(80, 80);
-            this.bt_309.TabIndex = 18;
-            this.bt_309.UseVisualStyleBackColor = true;
-            // 
-            // bt_308
-            // 
-            this.bt_308.Location = new System.Drawing.Point(635, 297);
-            this.bt_308.Name = "bt_308";
-            this.bt_308.Size = new System.Drawing.Size(80, 80);
-            this.bt_308.TabIndex = 17;
-            this.bt_308.UseVisualStyleBackColor = true;
-            // 
-            // bt_108
-            // 
-            this.bt_108.Location = new System.Drawing.Point(635, 99);
-            this.bt_108.Name = "bt_108";
-            this.bt_108.Size = new System.Drawing.Size(80, 80);
-            this.bt_108.TabIndex = 16;
-            this.bt_108.UseVisualStyleBackColor = true;
-            // 
-            // bt_506
-            // 
-            this.bt_506.Location = new System.Drawing.Point(463, 495);
-            this.bt_506.Name = "bt_506";
-            this.bt_506.Size = new System.Drawing.Size(80, 80);
-            this.bt_506.TabIndex = 15;
-            this.bt_506.UseVisualStyleBackColor = true;
-            // 
-            // bt_406
-            // 
-            this.bt_406.Location = new System.Drawing.Point(463, 396);
-            this.bt_406.Name = "bt_406";
-            this.bt_406.Size = new System.Drawing.Size(80, 80);
-            this.bt_406.TabIndex = 14;
-            this.bt_406.UseVisualStyleBackColor = true;
-            // 
-            // bt_306
-            // 
-            this.bt_306.Location = new System.Drawing.Point(463, 297);
-            this.bt_306.Name = "bt_306";
-            this.bt_306.Size = new System.Drawing.Size(80, 80);
-            this.bt_306.TabIndex = 13;
-            this.bt_306.UseVisualStyleBackColor = true;
-            // 
-            // bt_206
-            // 
-            this.bt_206.Location = new System.Drawing.Point(463, 198);
-            this.bt_206.Name = "bt_206";
-            this.bt_206.Size = new System.Drawing.Size(80, 80);
-            this.bt_206.TabIndex = 34;
-            this.bt_206.UseVisualStyleBackColor = true;
-            // 
-            // bt_106
-            // 
-            this.bt_106.Location = new System.Drawing.Point(463, 99);
-            this.bt_106.Name = "bt_106";
-            this.bt_106.Size = new System.Drawing.Size(80, 80);
-            this.bt_106.TabIndex = 35;
-            this.bt_106.UseVisualStyleBackColor = true;
-            // 
-            // bt_505
-            // 
-            this.bt_505.Location = new System.Drawing.Point(377, 495);
-            this.bt_505.Name = "bt_505";
-            this.bt_505.Size = new System.Drawing.Size(80, 80);
-            this.bt_505.TabIndex = 36;
-            this.bt_505.UseVisualStyleBackColor = true;
-            // 
-            // bt_405
-            // 
-            this.bt_405.Location = new System.Drawing.Point(377, 396);
-            this.bt_405.Name = "bt_405";
-            this.bt_405.Size = new System.Drawing.Size(80, 80);
-            this.bt_405.TabIndex = 59;
-            this.bt_405.UseVisualStyleBackColor = true;
-            // 
-            // bt_305
-            // 
-            this.bt_305.Location = new System.Drawing.Point(377, 297);
-            this.bt_305.Name = "bt_305";
-            this.bt_305.Size = new System.Drawing.Size(80, 80);
-            this.bt_305.TabIndex = 57;
-            this.bt_305.UseVisualStyleBackColor = true;
-            // 
-            // bt_205
-            // 
-            this.bt_205.Location = new System.Drawing.Point(377, 198);
-            this.bt_205.Name = "bt_205";
-            this.bt_205.Size = new System.Drawing.Size(80, 80);
-            this.bt_205.TabIndex = 56;
-            this.bt_205.UseVisualStyleBackColor = true;
-            // 
-            // bt_105
-            // 
-            this.bt_105.Location = new System.Drawing.Point(377, 99);
-            this.bt_105.Name = "bt_105";
-            this.bt_105.Size = new System.Drawing.Size(80, 80);
-            this.bt_105.TabIndex = 55;
-            this.bt_105.UseVisualStyleBackColor = true;
-            // 
-            // bt_504
-            // 
-            this.bt_504.Location = new System.Drawing.Point(291, 495);
-            this.bt_504.Name = "bt_504";
-            this.bt_504.Size = new System.Drawing.Size(80, 80);
-            this.bt_504.TabIndex = 54;
-            this.bt_504.UseVisualStyleBackColor = true;
-            // 
-            // bt_404
-            // 
-            this.bt_404.Location = new System.Drawing.Point(291, 396);
-            this.bt_404.Name = "bt_404";
-            this.bt_404.Size = new System.Drawing.Size(80, 80);
-            this.bt_404.TabIndex = 53;
-            this.bt_404.UseVisualStyleBackColor = true;
-            // 
-            // bt_304
-            // 
-            this.bt_304.Location = new System.Drawing.Point(291, 297);
-            this.bt_304.Name = "bt_304";
-            this.bt_304.Size = new System.Drawing.Size(80, 80);
-            this.bt_304.TabIndex = 52;
-            this.bt_304.UseVisualStyleBackColor = true;
-            // 
-            // bt_204
-            // 
-            this.bt_204.Location = new System.Drawing.Point(291, 198);
-            this.bt_204.Name = "bt_204";
-            this.bt_204.Size = new System.Drawing.Size(80, 80);
-            this.bt_204.TabIndex = 51;
-            this.bt_204.UseVisualStyleBackColor = true;
-            // 
-            // bt_503
-            // 
-            this.bt_503.Location = new System.Drawing.Point(205, 495);
-            this.bt_503.Name = "bt_503";
-            this.bt_503.Size = new System.Drawing.Size(80, 80);
-            this.bt_503.TabIndex = 50;
-            this.bt_503.UseVisualStyleBackColor = true;
-            // 
-            // bt_104
-            // 
-            this.bt_104.Location = new System.Drawing.Point(291, 99);
-            this.bt_104.Name = "bt_104";
-            this.bt_104.Size = new System.Drawing.Size(80, 80);
-            this.bt_104.TabIndex = 49;
-            this.bt_104.UseVisualStyleBackColor = true;
-            // 
-            // bt_403
-            // 
-            this.bt_403.Location = new System.Drawing.Point(205, 396);
-            this.bt_403.Name = "bt_403";
-            this.bt_403.Size = new System.Drawing.Size(80, 80);
-            this.bt_403.TabIndex = 48;
-            this.bt_403.UseVisualStyleBackColor = true;
-            // 
-            // bt_303
-            // 
-            this.bt_303.Location = new System.Drawing.Point(205, 297);
-            this.bt_303.Name = "bt_303";
-            this.bt_303.Size = new System.Drawing.Size(80, 80);
-            this.bt_303.TabIndex = 47;
-            this.bt_303.UseVisualStyleBackColor = true;
-            // 
-            // bt_502
-            // 
-            this.bt_502.Location = new System.Drawing.Point(119, 495);
-            this.bt_502.Name = "bt_502";
-            this.bt_502.Size = new System.Drawing.Size(80, 80);
-            this.bt_502.TabIndex = 46;
-            this.bt_502.UseVisualStyleBackColor = true;
-            // 
-            // bt_203
-            // 
-            this.bt_203.Location = new System.Drawing.Point(205, 198);
-            this.bt_203.Name = "bt_203";
-            this.bt_203.Size = new System.Drawing.Size(80, 80);
-            this.bt_203.TabIndex = 45;
-            this.bt_203.UseVisualStyleBackColor = true;
-            // 
-            // bt_402
-            // 
-            this.bt_402.Location = new System.Drawing.Point(119, 396);
-            this.bt_402.Name = "bt_402";
-            this.bt_402.Size = new System.Drawing.Size(80, 80);
-            this.bt_402.TabIndex = 44;
-            this.bt_402.UseVisualStyleBackColor = true;
-            // 
-            // bt_302
-            // 
-            this.bt_302.Location = new System.Drawing.Point(119, 297);
-            this.bt_302.Name = "bt_302";
-            this.bt_302.Size = new System.Drawing.Size(80, 80);
-            this.bt_302.TabIndex = 43;
-            this.bt_302.UseVisualStyleBackColor = true;
-            // 
-            // bt_202
-            // 
-            this.bt_202.Location = new System.Drawing.Point(119, 198);
-            this.bt_202.Name = "bt_202";
-            this.bt_202.Size = new System.Drawing.Size(80, 80);
-            this.bt_202.TabIndex = 42;
-            this.bt_202.UseVisualStyleBackColor = true;
-            // 
-            // bt_501
-            // 
-            this.bt_501.Location = new System.Drawing.Point(33, 495);
-            this.bt_501.Name = "bt_501";
-            this.bt_501.Size = new System.Drawing.Size(80, 80);
-            this.bt_501.TabIndex = 41;
-            this.bt_501.UseVisualStyleBackColor = true;
-            // 
-            // bt_103
-            // 
-            this.bt_103.Location = new System.Drawing.Point(205, 99);
-            this.bt_103.Name = "bt_103";
-            this.bt_103.Size = new System.Drawing.Size(80, 80);
-            this.bt_103.TabIndex = 40;
-            this.bt_103.UseVisualStyleBackColor = true;
-            // 
-            // bt_401
-            // 
-            this.bt_401.Location = new System.Drawing.Point(33, 396);
-            this.bt_401.Name = "bt_401";
-            this.bt_401.Size = new System.Drawing.Size(80, 80);
-            this.bt_401.TabIndex = 39;
-            this.bt_401.UseVisualStyleBackColor = true;
-            // 
-            // bt_301
-            // 
-            this.bt_301.Location = new System.Drawing.Point(33, 297);
-            this.bt_301.Name = "bt_301";
-            this.bt_301.Size = new System.Drawing.Size(80, 80);
-            this.bt_301.TabIndex = 38;
-            this.bt_301.UseVisualStyleBackColor = true;
-            // 
-            // bt_201
-            // 
-            this.bt_201.Location = new System.Drawing.Point(33, 198);
-            this.bt_201.Name = "bt_201";
-            this.bt_201.Size = new System.Drawing.Size(80, 80);
-            this.bt_201.TabIndex = 37;
-            this.bt_201.UseVisualStyleBackColor = true;
-            // 
-            // bt_102
-            // 
-            this.bt_102.Location = new System.Drawing.Point(119, 99);
-            this.bt_102.Name = "bt_102";
-            this.bt_102.Size = new System.Drawing.Size(80, 80);
-            this.bt_102.TabIndex = 12;
-            this.bt_102.UseVisualStyleBackColor = true;
-            // 
-            // bt_101
-            // 
-            this.bt_101.Location = new System.Drawing.Point(33, 99);
-            this.bt_101.Name = "bt_101";
-            this.bt_101.Size = new System.Drawing.Size(80, 80);
-            this.bt_101.TabIndex = 58;
-            this.bt_101.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.button2.Location = new System.Drawing.Point(862, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 29);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.SpringGreen;
-            this.button1.Location = new System.Drawing.Point(862, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 28);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // lbl_ten
-            // 
-            this.lbl_ten.AutoSize = true;
-            this.lbl_ten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ten.Location = new System.Drawing.Point(-16, 607);
-            this.lbl_ten.Name = "lbl_ten";
-            this.lbl_ten.Size = new System.Drawing.Size(30, 17);
-            this.lbl_ten.TabIndex = 8;
-            this.lbl_ten.Text = "null";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.BackColor = System.Drawing.Color.DarkCyan;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hệThốngToolStripMenuItem,
-            this.quảnLýToolStripMenuItem,
-            this.danhMụcToolStripMenuItem,
-            this.thốngKêToolStripMenuItem,
-            this.trợGiúpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(918, 55);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // quảnLýToolStripMenuItem
-            // 
-            this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.danhSáchPhòngToolStripMenuItem,
-            this.nhânViênToolStripMenuItem,
-            this.sửaPhòngToolStripMenuItem,
-            this.tìmKiếmKháchHàngToolStripMenuItem,
-            this.thêmXóaPhòngToolStripMenuItem,
-            this.sửaDịchVụToolStripMenuItem});
-            this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
-            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(75, 51);
-            this.quảnLýToolStripMenuItem.Text = "Quản Lý";
-            // 
             // danhSáchPhòngToolStripMenuItem
             // 
             this.danhSáchPhòngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("danhSáchPhòngToolStripMenuItem.Image")));
             this.danhSáchPhòngToolStripMenuItem.Name = "danhSáchPhòngToolStripMenuItem";
             this.danhSáchPhòngToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.danhSáchPhòngToolStripMenuItem.Text = "Danh Sách Phòng";
+            this.danhSáchPhòngToolStripMenuItem.Click += new System.EventHandler(this.danhSáchPhòngToolStripMenuItem_Click);
             // 
             // nhânViênToolStripMenuItem
             // 
@@ -1209,6 +1298,7 @@
             this.sửaPhòngToolStripMenuItem.Name = "sửaPhòngToolStripMenuItem";
             this.sửaPhòngToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.sửaPhòngToolStripMenuItem.Text = "Sửa Phòng";
+            this.sửaPhòngToolStripMenuItem.Click += new System.EventHandler(this.sửaPhòngToolStripMenuItem_Click);
             // 
             // tìmKiếmKháchHàngToolStripMenuItem
             // 
@@ -1217,45 +1307,12 @@
             this.tìmKiếmKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.tìmKiếmKháchHàngToolStripMenuItem.Text = "Tìm Kiếm Khách Hàng";
             // 
-            // thêmXóaPhòngToolStripMenuItem
-            // 
-            this.thêmXóaPhòngToolStripMenuItem.Name = "thêmXóaPhòngToolStripMenuItem";
-            this.thêmXóaPhòngToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
-            this.thêmXóaPhòngToolStripMenuItem.Text = "Thêm/Xóa Phòng";
-            // 
-            // sửaDịchVụToolStripMenuItem
-            // 
-            this.sửaDịchVụToolStripMenuItem.Name = "sửaDịchVụToolStripMenuItem";
-            this.sửaDịchVụToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
-            this.sửaDịchVụToolStripMenuItem.Text = "Sửa Dịch Vụ";
-            // 
-            // danhMụcToolStripMenuItem
-            // 
-            this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(87, 51);
-            this.danhMụcToolStripMenuItem.Text = "Danh Mục";
-            // 
-            // thốngKêToolStripMenuItem
-            // 
-            this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.doanhThuToolStripMenuItem,
-            this.chiếtXuấtToolStripMenuItem});
-            this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(84, 51);
-            this.thốngKêToolStripMenuItem.Text = "Thống Kê";
-            // 
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("doanhThuToolStripMenuItem.Image")));
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
             this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
             this.doanhThuToolStripMenuItem.Text = "Doanh Thu";
-            // 
-            // chiếtXuấtToolStripMenuItem
-            // 
-            this.chiếtXuấtToolStripMenuItem.Name = "chiếtXuấtToolStripMenuItem";
-            this.chiếtXuấtToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
-            this.chiếtXuấtToolStripMenuItem.Text = "Chiết Xuất";
             // 
             // pt_hinh
             // 
@@ -1379,6 +1436,7 @@
             this.Controls.Add(this.pt_hinh);
             this.Name = "QuanLyPhong";
             this.Text = "QuanLyPhong";
+            this.Load += new System.EventHandler(this.qlks_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pt_hinh)).EndInit();
