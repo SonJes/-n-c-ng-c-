@@ -24,6 +24,5 @@ namespace QuanLyKhachSan
         {
             Application.Exit();
         }
-
     }
 }

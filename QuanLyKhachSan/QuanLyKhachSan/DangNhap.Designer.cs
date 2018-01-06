@@ -107,7 +107,7 @@
             this.bt_thoat.TabIndex = 10;
             this.bt_thoat.Text = "X";
             this.bt_thoat.UseVisualStyleBackColor = false;
-
+            this.bt_thoat.Click += new System.EventHandler(this.bt_thoat_Click);
             // 
             // label1
             // 
