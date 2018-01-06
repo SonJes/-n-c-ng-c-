@@ -64,6 +64,7 @@
             this.bt_dong.TabIndex = 16;
             this.bt_dong.Text = "Đóng";
             this.bt_dong.UseVisualStyleBackColor = false;
+            this.bt_dong.Click += new System.EventHandler(this.bt_dong_Click);
             // 
             // bt_luu
             // 
@@ -76,6 +77,7 @@
             this.bt_luu.TabIndex = 15;
             this.bt_luu.Text = "Lưu";
             this.bt_luu.UseVisualStyleBackColor = false;
+            this.bt_luu.Click += new System.EventHandler(this.bt_luu_Click);
             // 
             // txt_nl
             // 
@@ -189,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";
+            this.Load += new System.EventHandler(this.doimatkhau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
