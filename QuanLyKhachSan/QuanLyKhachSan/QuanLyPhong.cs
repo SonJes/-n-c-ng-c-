@@ -271,5 +271,784 @@ namespace QuanLyKhachSan
             frm_load();
 
         }
+        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DangNhap dn = new DangNhap();
+            dn.Show();
+            //DangNhap dn = new DangNhap();
+            //dn.ShowDialog();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn thoát?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void danhSáchPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DanhSachPhong p = new DanhSachPhong();
+            p.ShowDialog();
+        }
+        private void bt_101_Click(object sender, EventArgs e)
+        {
+            tt = layttp(101);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 101;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_102_Click(object sender, EventArgs e)
+        {
+            tt = layttp(102);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 102;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_103_Click(object sender, EventArgs e)
+        {
+            tt = layttp(103);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 103;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_104_Click(object sender, EventArgs e)
+        {
+            tt = layttp(104);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 104;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_105_Click(object sender, EventArgs e)
+        {
+            tt = layttp(105);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 105;
+                Phong p = new Phong();
+                p.ShowDialog();
+                load_tinhtrangphong();
+            }
+        }
+        private void bt_106_Click(object sender, EventArgs e)
+        {
+            tt = layttp(106);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 106;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_107_Click(object sender, EventArgs e)
+        {
+            tt = layttp(107);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 107;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_108_Click(object sender, EventArgs e)
+        {
+            tt = layttp(108);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 108;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_109_Click(object sender, EventArgs e)
+        {
+            tt = layttp(109);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 109;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_110_Click(object sender, EventArgs e)
+        {
+            tt = layttp(110);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 110;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_210_Click(object sender, EventArgs e)
+        {
+            tt = layttp(120);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 210;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_209_Click(object sender, EventArgs e)
+        {
+            tt = layttp(209);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 209;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_208_Click(object sender, EventArgs e)
+        {
+            tt = layttp(208);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 208;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_207_Click(object sender, EventArgs e)
+        {
+            tt = layttp(207);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 207;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_206_Click(object sender, EventArgs e)
+        {
+            tt = layttp(206);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 206;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_205_Click(object sender, EventArgs e)
+        {
+            tt = layttp(205);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 205;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_204_Click(object sender, EventArgs e)
+        {
+            tt = layttp(204);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 204;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_203_Click(object sender, EventArgs e)
+        {
+            tt = layttp(203);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 203;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_202_Click(object sender, EventArgs e)
+        {
+            tt = layttp(202);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 202;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_201_Click(object sender, EventArgs e)
+        {
+            tt = layttp(201);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 201;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_301_Click(object sender, EventArgs e)
+        {
+            tt = layttp(301);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 301;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_302_Click(object sender, EventArgs e)
+        {
+            tt = layttp(302);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 302;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_303_Click(object sender, EventArgs e)
+        {
+            tt = layttp(303);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 303;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_304_Click(object sender, EventArgs e)
+        {
+            tt = layttp(304);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 304;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_305_Click(object sender, EventArgs e)
+        {
+            tt = layttp(305);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 305;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_306_Click(object sender, EventArgs e)
+        {
+            tt = layttp(306);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 306;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_307_Click(object sender, EventArgs e)
+        {
+            tt = layttp(307);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 307;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_308_Click(object sender, EventArgs e)
+        {
+            tt = layttp(308);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 308;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_309_Click(object sender, EventArgs e)
+        {
+            tt = layttp(309);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 309;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_310_Click(object sender, EventArgs e)
+        {
+            tt = layttp(310);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 310;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_401_Click(object sender, EventArgs e)
+        {
+            tt = layttp(401);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 401;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_402_Click(object sender, EventArgs e)
+        {
+            tt = layttp(402);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 402;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_403_Click(object sender, EventArgs e)
+        {
+            tt = layttp(403);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 403;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_404_Click(object sender, EventArgs e)
+        {
+            tt = layttp(404);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 404;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_405_Click(object sender, EventArgs e)
+        {
+            tt = layttp(405);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 405;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_406_Click(object sender, EventArgs e)
+        {
+            tt = layttp(406);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 406;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_407_Click(object sender, EventArgs e)
+        {
+            tt = layttp(407);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 407;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_408_Click(object sender, EventArgs e)
+        {
+            tt = layttp(408);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 408;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_409_Click(object sender, EventArgs e)
+        {
+            tt = layttp(409);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 409;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_410_Click(object sender, EventArgs e)
+        {
+            tt = layttp(410);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 410;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_501_Click(object sender, EventArgs e)
+        {
+            tt = layttp(501);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 501;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_502_Click(object sender, EventArgs e)
+        {
+            tt = layttp(502);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 502;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_503_Click(object sender, EventArgs e)
+        {
+            tt = layttp(503);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 503;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_504_Click(object sender, EventArgs e)
+        {
+            tt = layttp(504);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 504;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_505_Click(object sender, EventArgs e)
+        {
+            tt = layttp(505);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 505;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_506_Click(object sender, EventArgs e)
+        {
+            tt = layttp(506);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 506;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_507_Click(object sender, EventArgs e)
+        {
+            tt = layttp(507);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 507;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_508_Click(object sender, EventArgs e)
+        {
+            tt = layttp(508);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 508;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_509_Click(object sender, EventArgs e)
+        {
+            tt = layttp(509);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 509;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
+
+        private void bt_510_Click(object sender, EventArgs e)
+        {
+            tt = layttp(510);
+            if (tt == "dp")
+            {
+
+            }
+            else
+            {
+                Phong.maphong = 510;
+                Phong p = new Phong();
+                p.ShowDialog(); load_tinhtrangphong();
+            }
+        }
     }
 }
