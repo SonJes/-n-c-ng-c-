@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuanLyKhachSan
 {
@@ -13,7 +9,7 @@ namespace QuanLyKhachSan
         SqlConnection con = new SqlConnection(@"Data Source = JOHAN\SQLEXPRESS; Initial Catalog = Qlks; Integrated Security = True");
         DataTable dt = new DataTable();
 
-
+        //Dang Nhap
         public DataTable dangnhap(string tk, string mk)
         {
             if (con.State == ConnectionState.Open)
@@ -27,6 +23,7 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        //QuanLy Phong
         public SqlDataReader txphong(int ma)
         {
             if (con.State == ConnectionState.Open)
@@ -51,6 +48,7 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        //Doi Mat Khau
         public DataTable doimatkhau(string taikhoan, string mkc, string mkm)
         {
             if (con.State == ConnectionState.Open)
@@ -66,6 +64,7 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        //Phong
         public SqlDataReader loaiphong(int mp)
         {
             if (con.State == ConnectionState.Open)
@@ -131,6 +130,7 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        //Dat Phong
         public SqlDataReader loaddp(int ma)
         {
             if (con.State == ConnectionState.Open)
@@ -171,6 +171,7 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        //Doanh Thu
         public DataTable doanhthu(int ma)
         {
             if (con.State == ConnectionState.Open)
@@ -195,6 +196,7 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        //Danh Sach Phong
         public DataTable danhsachp(int ma)
         {
             if (con.State == ConnectionState.Open)
@@ -410,6 +412,152 @@ namespace QuanLyKhachSan
             cm.Parameters.AddWithValue("@maphong", ma);
             cm.Parameters.AddWithValue("@tenkh", ten);
             cm.Parameters.AddWithValue("@tongtien", tt);
+            kq = cm.ExecuteReader();
+            return kq;
+        }
+        //Report InHoaDon
+        public DataTable taoreport(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("report", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        //Dich Vu
+        public DataTable laydichvu(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("laydichvu", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable suadv(int ma, string ten, int gia)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("suadv", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            cm.Parameters.AddWithValue("@ten", ten);
+            cm.Parameters.AddWithValue("@gia", gia);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public SqlDataReader xoadv(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader dr;
+            SqlCommand cm = new SqlCommand("xoadv", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            dr = cm.ExecuteReader();
+            return dr;
+        }
+        //Cap nhat
+        public SqlDataReader hienchiphiphu(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader ketqua = null;
+            SqlCommand cm = new SqlCommand("hiencpp", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            ketqua = cm.ExecuteReader();
+            return ketqua;
+        }
+        public DataTable capnhatchiphi(int mp, int tiencoc, string dichvu, int gia)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("CapNhatCp", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            cm.Parameters.AddWithValue("@tiendatcoc", tiencoc);
+            cm.Parameters.AddWithValue("@dicvu", dichvu);
+            cm.Parameters.AddWithValue("@gia", gia);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable Capnhattongtien(int mp, int tt)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("capnhattongtien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            cm.Parameters.AddWithValue("@tien", tt);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        //Tim Khach hang
+        public DataTable timkhachang(string chuoi)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("timkhachhang", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@chuoi", chuoi);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        //Tx Phong
+        public DataTable laytrangthaianhien(int ma, string tt)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("laytrangthaianhien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            cm.Parameters.AddWithValue("@trangthai", tt);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable suatrangthaianhien(int ma, string tt)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("suatrangthaianhien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            cm.Parameters.AddWithValue("@trangthai", tt);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public SqlDataReader ttphong1(int manv)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader kq = null;
+            SqlCommand cm = new SqlCommand("tinhtrangphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", manv);
             kq = cm.ExecuteReader();
             return kq;
         }
