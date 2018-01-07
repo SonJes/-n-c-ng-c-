@@ -1049,7 +1049,7 @@ namespace QuanLyKhachSan
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DoiMatKhau.taikhoan = nguoi_dn;
-            doimatkhau dmk = new doimatkhau();
+            DoiMatKhau dmk = new DoiMatKhau();
             dmk.ShowDialog();
         }
     }
