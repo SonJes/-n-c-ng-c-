@@ -40,5 +40,44 @@ namespace QuanLyKhachSan
         {
             load();
         }
+        private void rd_mp_Click(object sender, EventArgs e)
+        {
+            txt_mp.Enabled = true;
+            txt_n1.Enabled = false;
+            txt_n2.Enabled = false;
+            txt_t.Enabled = false;
+            txt_n1.Text = "31/12";
+            txt_n2.Text = "31/12";
+            txt_t.Text = "1/ or 12";
+            txt_mp.Focus();
+        }
+
+        private void rd_ngay_Click(object sender, EventArgs e)
+        {
+            txt_n1.Enabled = true;
+            txt_n2.Enabled = true;
+            txt_mp.Enabled = false;
+            txt_t.Enabled = false;
+            txt_mp.Text = "";
+            txt_t.Text = "1/ or 12";
+            txt_n1.Text = "/";
+            txt_n2.Text = "/";
+            txt_n1.Focus();
+        }
+
+        private void dr_thang_Click(object sender, EventArgs e)
+        {
+            txt_t.Enabled = true;
+            txt_mp.Enabled = false;
+            txt_n1.Enabled = false;
+            txt_n2.Enabled = false;
+            txt_n1.Text = "31/12";
+            txt_n2.Text = "31/12";
+            txt_t.Text = "/";
+            txt_mp.Text = "";
+
+            txt_t.Focus();
+
+        }
     }
 }
