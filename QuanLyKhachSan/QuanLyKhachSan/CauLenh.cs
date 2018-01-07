@@ -131,5 +131,33 @@ namespace QuanLyKhachSan
             kq = cm.ExecuteReader();
             return kq;
         }
+        public DataTable datphong(int ma, string tt, string ten, DateTime ndp, string sdt)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("datphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            cm.Parameters.AddWithValue("@tinhtrang", tt);
+            cm.Parameters.AddWithValue("@tenkh", ten);
+            cm.Parameters.AddWithValue("@ngaydp", ndp);
+            cm.Parameters.AddWithValue("@sdt", sdt);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable huydatphong(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("huydatphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

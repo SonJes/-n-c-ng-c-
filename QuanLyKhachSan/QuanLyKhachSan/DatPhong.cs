@@ -49,5 +49,44 @@ namespace QuanLyKhachSan
         {
             this.Close();
         }
+        private void bt_luu_Click(object sender, EventArgs e)
+        {
+            if (rd_dp.Checked == true)
+            {
+                if (!string.IsNullOrEmpty(txt_ten.Text))
+                {
+                    if (!string.IsNullOrEmpty(txt_sdt.Text))
+                    {
+                        dt.Clear();
+                        dt = cl.datphong(mp, "Đặt Phòng", txt_ten.Text, dt_ngay.Value, txt_sdt.Text);
+                        if (MessageBox.Show("Đã Lưu", "Chú Ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                        {
+                            this.Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nhập", "Chú Ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        txt_sdt.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nhập", "Chú Ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    txt_ten.Focus();
+                }
+            }
+            if (rd_huy.Checked == true)
+            {
+                if (MessageBox.Show("Hủy?", "Chú Ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    dt.Clear();
+                    dt = cl.huydatphong(mp);
+                    txt_ten.Clear();
+                    txt_sdt.Clear();
+
+                }
+            }
+        }
     }
 }

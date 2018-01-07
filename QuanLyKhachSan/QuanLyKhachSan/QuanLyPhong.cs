@@ -1052,5 +1052,1034 @@ namespace QuanLyKhachSan
             DoiMatKhau dmk = new DoiMatKhau();
             dmk.ShowDialog();
         }
+        private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timkh tk = new timkh();
+            tk.Show();
+        }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            doanhthu dth = new doanhthu();
+            dth.ShowDialog();
+        }
+
+        private void nền1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = Image.FromFile(h1);
+        }
+
+        private void nền2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = Image.FromFile(h2);
+        }
+
+        private void nền3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = Image.FromFile(h3);
+        }
+
+        private void nền4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = Image.FromFile(h4);
+        }
+
+        private void noneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = null;
+        }
+
+        private void nền5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = Image.FromFile(h5);
+        }
+
+        private void nền6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pt_hinh.Image = Image.FromFile(h6);
+        }
+
+        private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thongtin tt = new Thongtin();
+            tt.ShowDialog();
+        }
+
+
+
+        private void thêmXóaPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Txphong tx = new Txphong();
+            tx.ShowDialog();
+            load_bt();
+            load_lb();
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongTinNV ttnv = new ThongTinNV();
+            ttnv.ShowDialog();
+        }
+
+        private void bt_101_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void bt_101_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(101);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 101;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_104_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(104);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 104;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_102_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(102);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 102;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_103_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(103);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 103;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_105_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(105);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 105;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_106_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(106);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 106;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_107_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(107);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 107;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_108_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(108);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 108;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_109_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(109);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 108;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_110_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(110);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 110;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_201_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(201);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 201;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_202_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(202);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 202;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_203_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(203);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 203;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_204_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(204);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 204;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_205_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(205);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 205;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_206_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(206);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 206;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_207_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(207);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 207;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_208_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(208);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 208;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_209_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(209);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 209;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_210_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(210);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 210;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_301_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(301);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 301;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_302_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(302);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 302;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_303_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(303);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 303;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_304_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(304);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 304;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_305_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(305);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 305;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_306_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(306);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 306;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_307_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(307);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 307;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_308_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(308);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 308;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_309_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(309);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 309;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_310_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(310);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 310;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_401_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(401);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 401;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_402_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(402);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 402;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_403_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(403);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 403;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_404_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(404);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 404;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_405_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(405);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 405;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_406_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(406);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 406;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_407_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(407);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 407;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_408_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(408);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 408;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_409_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(409);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 409;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_410_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(410);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 410;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_501_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(501);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 501;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_502_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(502);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 502;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_503_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(503);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 503;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_504_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(504);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 504;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_505_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(505);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 505;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_506_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(506);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 506;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_507_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(507);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 507;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_508_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(508);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 508;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_509_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(509);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 509;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void bt_510_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                tt = layttp(510);
+                if (tt == "kt")
+                {
+
+                }
+                else
+                {
+                    Point ClickPoint = new Point(e.X, e.Y);
+                    DatPhong.mp = 510;
+                    DatPhong dp = new DatPhong();
+                    dp.ShowDialog(); load_tinhtrangphong();
+                }
+            }
+        }
+
+        private void sửaDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DichVu dv = new DichVu();
+            dv.ShowDialog();
+        }
     }
 }
