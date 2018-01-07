@@ -79,5 +79,49 @@ namespace QuanLyKhachSan
             txt_t.Focus();
 
         }
+        private void bt_tim_Click(object sender, EventArgs e)
+        {
+
+            tt = 0;
+            if (rd_mp.Checked == true)
+            {
+                if (!string.IsNullOrEmpty(txt_mp.Text))
+                {
+                    dt.Clear();
+                    dt = cl.Doanhthu(Convert.ToInt32(txt_mp.Text));
+                    dg.DataSource = dt;
+                    for (int i = 0; i < dg.RowCount; i++)
+                    {
+                        tt += Convert.ToDouble(dg.Rows[i].Cells["Tienphong"].Value);
+                    }
+                    lb_dt.Text = tt.ToString();
+                }
+                else { load(); rd_mp.Checked = false; }
+            }
+            else if (rd_ngay.Checked == true)
+            {
+
+            }
+            else if (rd_thang.Checked == true)
+            {
+                if (!string.IsNullOrEmpty(txt_t.Text))
+                {
+                    dt.Clear();
+                    dt = cl.Doanhthuthang(txt_t.Text);
+                    dg.DataSource = dt;
+                    for (int i = 0; i < dg.RowCount; i++)
+                    {
+                        tt += Convert.ToDouble(dg.Rows[i].Cells["Tienphong"].Value);
+                    }
+                    lb_dt.Text = tt.ToString();
+                }
+                else { load(); rd_thang.Checked = false; }
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn kiểu", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                load();
+            }
+        }
     }
 }
