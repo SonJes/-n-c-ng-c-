@@ -94,8 +94,8 @@ namespace QuanLyKhachSan
         private void rd_them_CheckedChanged(object sender, EventArgs e)
         {
             dt.Clear();
-            cb_mpa.Enabled = false;
-            cb_mp.Enabled = true;
+            cb_mpa.Enabled = true;
+            cb_mp.Enabled = false;
             bt_them.Enabled = true;
             bt_xoa.Enabled = false;
             dt = cl.laytrangthaianhien(0, "Ẩn");
