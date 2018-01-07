@@ -119,6 +119,18 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public DataTable xoaphong(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("xoaphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
         public SqlDataReader loaddp(int ma)
         {
             if (con.State == ConnectionState.Open)
@@ -179,6 +191,85 @@ namespace QuanLyKhachSan
             SqlCommand cm = new SqlCommand("doanhthuthang", con);
             cm.CommandType = CommandType.StoredProcedure;
             cm.Parameters.AddWithValue("@chuoi", chuoi);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable danhsachp(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("danhsachphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable danhsachpt(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("danhsachphongt", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable danhsachpkt(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("danhsachphongkt", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable xoacpp(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("xoacpp", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable xoatongtien(int mp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("xoatongtien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable suaphong(int mp, string rd_kt, string txt_ten, int txt_namsinh, int txt_socm, int txt_songuoidp, DateTime txt_ngaydp, DateTime txt_ngaytp)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("suathongtinphong", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@maphong", mp);
+            cm.Parameters.AddWithValue("@tinhtrang", rd_kt);
+            cm.Parameters.AddWithValue("@tenkh", txt_ten);
+            cm.Parameters.AddWithValue("@namsinh", txt_namsinh);
+            cm.Parameters.AddWithValue("@socm", txt_socm);
+            cm.Parameters.AddWithValue("@songuoidp", txt_songuoidp);
+            cm.Parameters.AddWithValue("@ngaydp", txt_ngaydp);
+            cm.Parameters.AddWithValue("@ngaytp", txt_ngaytp);
             SqlDataAdapter da = new SqlDataAdapter(cm);
             da.Fill(dt);
             return dt;
