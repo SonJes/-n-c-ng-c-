@@ -82,5 +82,121 @@ namespace QuanLyKhachSan
             this.Close();
 
         }
+        private void bt_sua_Click(object sender, EventArgs e)
+        {
+
+            if (rd_t.Checked)
+            {
+                txt_ten.Clear();
+                txt_namsinh.Clear();
+                txt_socm.Clear();
+                txt_songuoidp.Clear();
+                lb_ngaydp.Text = "";
+                lb_ngaytp.Text = "";
+                dt = cl.xoaphong(maphong);
+                if (dt.Rows[0]["errcode"].ToString() == "1")
+                {
+                    dt = cl.xoacpp(maphong);
+                    dt = cl.xoatongtien(maphong);
+                    MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    load();
+                }
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(txt_ten.Text))
+                {
+                    if (!string.IsNullOrEmpty(txt_namsinh.Text))
+                    {
+                        if (!string.IsNullOrEmpty(txt_socm.Text))
+                        {
+                            if (!string.IsNullOrEmpty(txt_songuoidp.Text))
+                            {
+                                dt = cl.suaphong(maphong, rd_kt.Text, txt_ten.Text, Convert.ToInt32(txt_namsinh.Text), Convert.ToInt32(txt_socm.Text), Convert.ToInt32(txt_songuoidp.Text), dt_ngaydp.Value, dt_ngaytp.Value);
+                                rd_kt.Checked = true;
+                                if (dt.Rows[0]["errcode"].ToString() == "1")
+                                {
+                                    MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                                    load();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Lỗi", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Nhập Số Người Đặt Phòng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                txt_songuoidp.Focus();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Nhập Số Chứng Minh", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txt_socm.Focus();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nhập Năm Sinh", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txt_namsinh.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nhập Tên", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txt_ten.Focus();
+                }
+
+            }
+
+
+        }
+
+        private void bt_tinhtien_Click(object sender, EventArgs e)
+        {
+            Tinhtien.maphong = maphong;
+            Tinhtien tt = new Tinhtien();
+            tt.ShowDialog();
+
+        }
+
+        private void bt_capnhat_Click(object sender, EventArgs e)
+        {
+            Cap.maphong = maphong;
+            capnhat cn = new capnhat();
+            cn.ShowDialog();
+        }
+
+        private void txt_socm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_songuoidp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void rd_kt_CheckedChanged(object sender, EventArgs e)
+        {
+            bt_capnhat.Enabled = true;
+            bt_tinhtien.Enabled = true;
+        }
+
+        private void rd_t_CheckedChanged(object sender, EventArgs e)
+        {
+            bt_capnhat.Enabled = false;
+            bt_tinhtien.Enabled = false;
+        }
     }
 }

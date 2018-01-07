@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label8 = new System.Windows.Forms.Label();
             this.Manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dg = new System.Windows.Forms.DataGridView();
@@ -85,17 +85,18 @@
             this.Tennv});
             this.dg.Location = new System.Drawing.Point(17, 158);
             this.dg.Name = "dg";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dg.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg.Size = new System.Drawing.Size(319, 318);
             this.dg.TabIndex = 722;
+            this.dg.Click += new System.EventHandler(this.dg_Click);
             // 
             // Tennv
             // 
@@ -253,6 +254,7 @@
             this.bt_xoa.TabIndex = 712;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // bt_them
             // 
@@ -265,6 +267,7 @@
             this.bt_them.TabIndex = 710;
             this.bt_them.Text = "Thêm";
             this.bt_them.UseVisualStyleBackColor = false;
+            this.bt_them.Click += new System.EventHandler(this.bt_them_Click);
             // 
             // label9
             // 
@@ -297,6 +300,7 @@
             this.bt_sua.TabIndex = 711;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.UseVisualStyleBackColor = false;
+            this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
             // 
             // label1
             // 
@@ -337,6 +341,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ThongTinNV";
             this.Text = "ThongTinNV";
+            this.Load += new System.EventHandler(this.thongtinnv_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
