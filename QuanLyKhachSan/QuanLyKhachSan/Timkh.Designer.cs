@@ -64,6 +64,7 @@
             this.dg.Name = "dg";
             this.dg.Size = new System.Drawing.Size(784, 206);
             this.dg.TabIndex = 11;
+            this.dg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_CellClick);
             // 
             // Maphong
             // 
@@ -153,6 +154,7 @@
             this.bt_ct.TabIndex = 4;
             this.bt_ct.Text = "Chi Tiết";
             this.bt_ct.UseVisualStyleBackColor = false;
+            this.bt_ct.Click += new System.EventHandler(this.bt_ct_Click);
             // 
             // bt_xoa
             // 
@@ -165,6 +167,7 @@
             this.bt_xoa.TabIndex = 5;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // bt_tk
             // 
@@ -177,6 +180,7 @@
             this.bt_tk.TabIndex = 6;
             this.bt_tk.Text = "Tìm Kiếm";
             this.bt_tk.UseVisualStyleBackColor = false;
+            this.bt_tk.Click += new System.EventHandler(this.bt_tk_Click);
             // 
             // Timkh
             // 
@@ -193,6 +197,7 @@
             this.Controls.Add(this.bt_tk);
             this.Name = "Timkh";
             this.Text = "Timkh";
+            this.Load += new System.EventHandler(this.timkh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
