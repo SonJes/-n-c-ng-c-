@@ -166,8 +166,8 @@ namespace QuanLyKhachSan
 
         private void bt_capnhat_Click(object sender, EventArgs e)
         {
-            Cap.maphong = maphong;
-            capnhat cn = new capnhat();
+            CapNhat.maphong = maphong;
+            CapNhat cn = new CapNhat();
             cn.ShowDialog();
         }
 
