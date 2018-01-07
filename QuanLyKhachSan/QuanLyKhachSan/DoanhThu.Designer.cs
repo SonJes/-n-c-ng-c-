@@ -126,6 +126,7 @@
             this.bt_tim.TabIndex = 94;
             this.bt_tim.Text = "Tìm";
             this.bt_tim.UseVisualStyleBackColor = false;
+            this.bt_tim.Click += new System.EventHandler(this.bt_tim_Click);
             // 
             // rd_mp
             // 
@@ -140,6 +141,7 @@
             this.rd_mp.TabStop = true;
             this.rd_mp.Text = "Tìm theo ma phòng";
             this.rd_mp.UseVisualStyleBackColor = true;
+            this.rd_mp.Click += new System.EventHandler(this.rd_mp_Click);
             // 
             // Tienphong
             // 
@@ -167,6 +169,7 @@
             this.rd_thang.TabStop = true;
             this.rd_thang.Text = "Tìm theo tháng";
             this.rd_thang.UseVisualStyleBackColor = true;
+            this.rd_thang.Click += new System.EventHandler(this.dr_thang_Click);
             // 
             // rd_ngay
             // 
@@ -181,6 +184,7 @@
             this.rd_ngay.TabStop = true;
             this.rd_ngay.Text = "Tìm theo ngày";
             this.rd_ngay.UseVisualStyleBackColor = true;
+            this.rd_ngay.Click += new System.EventHandler(this.rd_ngay_Click);
             // 
             // dg
             // 
@@ -251,6 +255,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DoanhThu";
             this.Text = "DoanhThu";
+            this.Load += new System.EventHandler(this.Doanhthu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
