@@ -88,7 +88,7 @@ namespace QuanLyKhachSan
                 if (!string.IsNullOrEmpty(txt_mp.Text))
                 {
                     dt.Clear();
-                    dt = cl.Doanhthu(Convert.ToInt32(txt_mp.Text));
+                    dt = cl.doanhthu(Convert.ToInt32(txt_mp.Text));
                     dg.DataSource = dt;
                     for (int i = 0; i < dg.RowCount; i++)
                     {
@@ -107,7 +107,7 @@ namespace QuanLyKhachSan
                 if (!string.IsNullOrEmpty(txt_t.Text))
                 {
                     dt.Clear();
-                    dt = cl.Doanhthuthang(txt_t.Text);
+                    dt = cl.doanhthuthang(txt_t.Text);
                     dg.DataSource = dt;
                     for (int i = 0; i < dg.RowCount; i++)
                     {
