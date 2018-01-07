@@ -110,6 +110,7 @@
             this.bt_them.TabIndex = 5;
             this.bt_them.Text = "Thêm";
             this.bt_them.UseVisualStyleBackColor = false;
+            this.bt_them.Click += new System.EventHandler(this.bt_them_Click);
             // 
             // bt_luu
             // 
@@ -122,6 +123,7 @@
             this.bt_luu.TabIndex = 17;
             this.bt_luu.Text = "Lưu";
             this.bt_luu.UseVisualStyleBackColor = false;
+            this.bt_luu.Click += new System.EventHandler(this.bt_luu_Click);
             // 
             // txt_ma
             // 
@@ -192,6 +194,7 @@
             this.bt_xoa.TabIndex = 6;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // bt_sua
             // 
@@ -204,6 +207,7 @@
             this.bt_sua.TabIndex = 7;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.UseVisualStyleBackColor = false;
+            this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
             // 
             // DichVu
             // 
@@ -225,6 +229,7 @@
             this.Controls.Add(this.bt_sua);
             this.Name = "DichVu";
             this.Text = "DichVu";
+            this.Load += new System.EventHandler(this.dichvu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
