@@ -119,6 +119,18 @@
     <Compile Include="Timkh.Designer.cs">
       <DependentUpon>Timkh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tinhtien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tinhtien.Designer.cs">
+      <DependentUpon>Tinhtien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Txphong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Txphong.Designer.cs">
+      <DependentUpon>Txphong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Timkh.resx">
       <DependentUpon>Timkh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tinhtien.resx">
+      <DependentUpon>Tinhtien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Txphong.resx">
+      <DependentUpon>Txphong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Hinh\h.icon" />
     <None Include="Properties\Settings.settings">

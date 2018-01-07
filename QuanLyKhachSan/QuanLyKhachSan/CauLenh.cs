@@ -119,5 +119,17 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public SqlDataReader loaddp(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader kq = null;
+            SqlCommand cm = new SqlCommand("loaddp", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@ma", ma);
+            kq = cm.ExecuteReader();
+            return kq;
+        }
     }
 }
