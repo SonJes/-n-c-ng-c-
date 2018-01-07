@@ -26,7 +26,7 @@ namespace QuanLyKhachSan
             txt_n1.Enabled = false;
             txt_n2.Enabled = false;
             txt_t.Enabled = false;
-            dt = cl.Doanhthu(0);
+            dt = cl.doanhthu(0);
             dg.DataSource = dt;
             tt = 0;
             for (int i = 0; i < dg.RowCount; i++)
