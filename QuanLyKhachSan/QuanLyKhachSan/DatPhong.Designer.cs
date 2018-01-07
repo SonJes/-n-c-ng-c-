@@ -85,6 +85,7 @@
             this.bt_thoat.TabIndex = 23;
             this.bt_thoat.Text = "Thoát";
             this.bt_thoat.UseVisualStyleBackColor = false;
+            this.bt_thoat.Click += new System.EventHandler(this.bt_thoat_Click);
             // 
             // label6
             // 
@@ -151,6 +152,7 @@
             this.bt_luu.TabIndex = 14;
             this.bt_luu.Text = "Lưu";
             this.bt_luu.UseVisualStyleBackColor = false;
+            this.bt_luu.Click += new System.EventHandler(this.bt_luu_Click);
             // 
             // panel1
             // 
@@ -206,6 +208,7 @@
             this.Controls.Add(this.bt_luu);
             this.Name = "DatPhong";
             this.Text = "DatPhong";
+            this.Load += new System.EventHandler(this.datphong_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
