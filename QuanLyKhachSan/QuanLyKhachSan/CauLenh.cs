@@ -274,5 +274,81 @@ namespace QuanLyKhachSan
             da.Fill(dt);
             return dt;
         }
+        public DataTable themnv(string ht, string gt, string dc, string ns, int sdt, string tk, string mk)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+
+            SqlCommand cm = new SqlCommand("themnv", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@hoten", ht);
+            cm.Parameters.AddWithValue("@phai", gt);
+            cm.Parameters.AddWithValue("@diachi", dc);
+            cm.Parameters.AddWithValue("@ngaysinh", ns);
+            cm.Parameters.AddWithValue("@sodt", sdt);
+            cm.Parameters.AddWithValue("@taikhoan", tk);
+            cm.Parameters.AddWithValue("@matkhau", mk);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable suanv(string ht, string gt, string dc, string ns, int sdt, string tk, string mk)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+
+            SqlCommand cm = new SqlCommand("suanv", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@hoten", ht);
+            cm.Parameters.AddWithValue("@phai", gt);
+            cm.Parameters.AddWithValue("@diachi", dc);
+            cm.Parameters.AddWithValue("@ngaysinh", ns);
+            cm.Parameters.AddWithValue("@sodt", sdt);
+            cm.Parameters.AddWithValue("@taikhoan", tk);
+            cm.Parameters.AddWithValue("@matkhau", mk);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable xoanhanvien(int manv)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlCommand cm = new SqlCommand("xoanhanvien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@manv", manv);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable hiennv(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+
+            SqlCommand cm = new SqlCommand("hiennhanvien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@manv", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            da.Fill(dt);
+            return dt;
+        }
+        public SqlDataReader hiennhanvien(int ma)
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            con.Open();
+            SqlDataReader ketqua = null;
+            SqlCommand cm = new SqlCommand("hiennhanvien", con);
+            cm.CommandType = CommandType.StoredProcedure;
+            cm.Parameters.AddWithValue("@manv", ma);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+            ketqua = cm.ExecuteReader();
+            return ketqua;
+        }
     }
 }
