@@ -1054,13 +1054,13 @@ namespace QuanLyKhachSan
         }
         private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            timkh tk = new timkh();
+            Timkh tk = new Timkh();
             tk.Show();
         }
 
         private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            doanhthu dth = new doanhthu();
+            DoanhThu dth = new DoanhThu();
             dth.ShowDialog();
         }
 
@@ -1099,11 +1099,11 @@ namespace QuanLyKhachSan
             pt_hinh.Image = Image.FromFile(h6);
         }
 
-        private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thongtin tt = new Thongtin();
-            tt.ShowDialog();
-        }
+        //private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    Thongtin tt = new Thongtin();
+        //    tt.ShowDialog();
+        //}
 
 
 
